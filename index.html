@@ -20,10 +20,15 @@
             color: #fff;
             padding: 15px;
         }
-
+        .card-body {
+            text-align: justify;
+            padding: 15px;
+        }
+        h5 {
+            padding: 10px;
+        }
         img {
-            max-width: 100%;
-            height: auto;
+            padding: 10px;
         }
     </style>
 </head>
@@ -51,6 +56,18 @@
                         <i class="fab fa-github"></i> GitHub
                     </a>
                 </li>
+                <!-- Instagram -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/deivison_oc/" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </li>
+                <!-- E-mail -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="mostrarPopupEmail()">
+                        <i class="fas fa-pen"></i> E-mail
+                    </a>
+                </li>
                 <!-- Exibir Carta -->
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="mostrarCarta()">
@@ -63,29 +80,53 @@
 
     <!-- Conteúdo da Página -->
     <div class="container mt-4">
-
         <!-- Card sobre Mim -->
         <div class="card mb-4">
             <div class="card-header bg-dark text-white">
-                <h2><i class="fas fa-user"></i>  Sobre Mim</h2>
+                <h5><i class="fas fa-user"></i> Sobre Mim</h5>
             </div>
             <div class="card-body">
-                <!-- Detalhes sobre você -->
-                <p>Me chamo Deivison e sou um entusiasta desenvolvedor Full-Stack com uma paixão por criar soluções inovadoras. Minha jornada no mundo do desenvolvimento começou em 2017 e desde então venho me aprimorando e atualizando com o desejo de explorar e aprender novas tecnologias.</p>
-
-                <p>Além de uma sólida base em programação, possuo habilidades em desenvolvimento web, desde o básico (HTML/CSS/JS) até frameworks específicos (React/Angular/Vue). Tenho também habilidades específicas em Java (Spring/JSP/JPA), computação numérica (MATLAB/GNU Octave), Python (Pandas/Scikit-learn/Tensorflow/Flask) e em bancos de dados (MySQL/PostgreSQL/SQLite).</p>
-
-                <p>Atualmente, sou responsável por manter uma aplicação web que desenvolvi em React.js. Mais especificamente, realizo a configuração, manutenção e supervisão de um servidor MQTT (EMQX) para o controle de sistemas embarcados a longa distância.</p>
-
-                <p>Estou sempre em busca de oportunidades para expandir meus conhecimentos e habilidades e acredito que a melhor maneira de evoluir é enfrentar desafios e resolver problemas complexos.</p>
+                <div class="row">
+                    <!-- Coluna da Foto -->
+                    <div class="col-md-4">
+                        <img src="foto.jpg" class="img-fluid">
+                    </div>
+                    <!-- Coluna do Texto -->
+                    <div class="col-md-8">
+                        <div class="row">
+                            <!-- Detalhes sobre você -->
+                            <div class="col-md-12">
+                                <h6>Quem sou eu?</h6>
+                                <p>Me chamo Deivison e sou um entusiasta desenvolvedor Full-Stack com uma paixão por criar soluções inovadoras. Minha jornada no mundo do desenvolvimento começou em 2017 e desde então venho me aprimorando e atualizando com o desejo de explorar e aprender novas tecnologias.</p>
+                                <hr>
+                            </div>
+                            <!-- Habilidades -->
+                            <div class="col-md-6">
+                                <h6>Habilidades</h6>
+                                <p>Além de uma sólida base em programação, possuo habilidades em desenvolvimento web, desde o básico (HTML/CSS/JS) até frameworks específicos (React/Angular/Vue). Tenho também habilidades específicas em Java (Spring/JSP/JPA), computação numérica (MATLAB/GNU Octave), Python (Pandas/Scikit-learn/Tensorflow/Flask) e em bancos de dados (MySQL/PostgreSQL/SQLite).</p>
+                                <hr>
+                            </div>
+                            <!-- Experiência Atual -->
+                            <div class="col-md-6">
+                                <h6>Experiência Atual</h6>
+                                <p>Atualmente, sou responsável por manter uma aplicação web que desenvolvi em React.js. Mais especificamente, realizo a configuração, manutenção e supervisão de um servidor MQTT (EMQX) para o controle de sistemas embarcados a longa distância.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Busca por Desafios -->
+                    <div class="col-md-12" id="bpd">
+                        <h6>Busca por Desafios</h6>
+                        <p>Estou sempre em busca de oportunidades para expandir meus conhecimentos e habilidades e acredito que a melhor maneira de evoluir é enfrentar desafios e resolver problemas complexos.</p>
+                    </div>
+                </div>
             </div>
         </div>
-
 
         <!-- Experiência -->
         <div class="card mb-4">
             <div class="card-header bg-dark text-white">
-                <h2><i class="fas fa-briefcase"></i>  Experiência</h2>
+                <h5><i class="fas fa-briefcase"></i>  Experiência</h5>
             </div>
             <div class="card-body">
                 <!-- Card de Agrisoft Solution -->
@@ -162,7 +203,7 @@
         <!-- Educação -->
         <div class="card mb-4">
             <div class="card-header bg-dark text-white">
-                <h2><i class="fas fa-graduation-cap"></i>  Educação</h2>
+                <h5><i class="fas fa-graduation-cap"></i>  Educação</h5>
             </div>
             <div class="card-body">
                 <!-- Card de Bacharelado em Engenharia -->
@@ -195,7 +236,7 @@
         <!-- Projetos -->
         <div class="card mb-4">
             <div class="card-header bg-dark text-white">
-                <h2><i class="fas fa-project-diagram"></i>  Principais Projetos</h2>
+                <h5><i class="fas fa-project-diagram"></i>  Principais Projetos</h5>
             </div>
             <div class="card-body">
                 <!-- Card de IoT Relay Irrigation Control -->
@@ -241,7 +282,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Carta de Apresentação</h5>
+                    <h6 class="modal-title">Carta de Apresentação</h6>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -257,6 +298,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Email (modal) -->
+    <div class="modal" tabindex="-1" role="dialog" id="emailModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">E-mails para contato</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>E-mail pessoal:</h6>
+                    <p>deivisonbambui@gmail.com</p>
+                    <h6>E-mail acadêmico:</h6>
+                    <p>0034436@academico.ifmg.edu.br</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -266,6 +327,9 @@
         function mostrarCarta() {
             // Lógica para exibir a carta
             $('#cartaModal').modal('show');
+        }
+        function mostrarPopupEmail() {
+            $('#emailModal').modal('show');
         }
     </script>
 
