@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.freepik.com/vetores-premium/icone-de-casa-simbolo-da-casa-design-de-vetor-simples-para-logotipo_231786-5048.jpg" type="image/jpg">
+    <title>Meu Portfólio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+            padding: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- LinkedIn -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/deivison-costa/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <!-- GitHub -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/Deivison-Costa" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <!-- Exibir Carta -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="mostrarCarta()">
+                        <i class="fas fa-envelope"></i> Carta de Apresentação
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <div class="container mt-4">
+
+        <!-- Card sobre Mim -->
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">
+                <h2><i class="fas fa-user"></i>  Sobre Mim</h2>
+            </div>
+            <div class="card-body">
+                <!-- Detalhes sobre você -->
+                <p>Me chamo Deivison e sou um entusiasta desenvolvedor Full-Stack com uma paixão por criar soluções inovadoras. Minha jornada no mundo do desenvolvimento começou em 2017 e desde então venho me aprimorando e atualizando com o desejo de explorar e aprender novas tecnologias.</p>
+
+                <p>Além de uma sólida base em programação, possuo habilidades em desenvolvimento web, desde o básico (HTML/CSS/JS) até frameworks específicos (React/Angular/Vue). Tenho também habilidades específicas em Java (Spring/JSP/JPA), computação numérica (MATLAB/GNU Octave), Python (Pandas/Scikit-learn/Tensorflow/Flask) e em bancos de dados (MySQL/PostgreSQL/SQLite).</p>
+
+                <p>Atualmente, sou responsável por manter uma aplicação web que desenvolvi em React.js. Mais especificamente, realizo a configuração, manutenção e supervisão de um servidor MQTT (EMQX) para o controle de sistemas embarcados a longa distância.</p>
+
+                <p>Estou sempre em busca de oportunidades para expandir meus conhecimentos e habilidades e acredito que a melhor maneira de evoluir é enfrentar desafios e resolver problemas complexos.</p>
+            </div>
+        </div>
+
+
+        <!-- Experiência -->
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">
+                <h2><i class="fas fa-briefcase"></i>  Experiência</h2>
+            </div>
+            <div class="card-body">
+                <!-- Card de Agrisoft Solution -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Técnico de Servidores</h5>
+                        Agrisoft Solutions | Bambuí, MG | 05/2023 - Atualmente
+                    </div>
+                    <div class="card-body">
+                        <!-- Tecnologias utilizadas -->
+                        <p>
+                            <i class="fab fa-react"></i> 
+                            <i class="fab fa-git"></i> 
+                            <i class="fab fa-cuttlefish"></i> 
+                            <i class="fab fa-linux"></i> 
+                            <i class="fas fa-database"></i> 
+                            <i class="fas fa-server"></i> 
+                            <i class="fas fa-code"></i>
+                        </p>
+                        <!-- Detalhes da experiência -->
+                        <ul>
+                            <li>Desenvolvimento de uma aplicação Web em ReactJS, devidamente versionada com Git, cuja função era fornecer uma interface ao usuário para o controle de um Sistema Embarcado a distância através de um servidor MQTT, o qual foi configurado pelo dashboard EMQX.</li>
+                            <li> Desenvolvimento de um sistema em C++ para um microcontrolador ESP32 para estabelecer a comunicação via rádio entre o servidor MQTT e um painel de relés do Sistema Embarcado.</li>
+                            <li>Desenvolvimento de um banco de dados para tratar as ações CRUD dos clientes com o PostgreSQL.</li>
+                            <li>Configuração de um Servidor Linux para hospedagem da aplicação. Realização de testes de carga do sistema usando Apache JMeter.</li>
+                            <li>Melhoria contínua da aplicação, com foco nas solicitações dos clientes da Startup.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card de IFMG -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Monitor de Disciplinas</h5>
+                        IFMG - Campus Bambuí | Bambuí, MG | 04/2021 - 06/2022
+                    </div>
+                    <div class="card-body">
+                        <!-- Tecnologias utilizadas -->
+                        <p>
+                            <i class="fab fa-cuttlefish"></i>
+                            <i class="fas fa-microchip"></i>
+                            <i class="fas fa-calculator"></i>
+                        </p>
+                        <!-- Detalhes da experiência -->
+                        <ul>
+                            <li>Atuei como monitor das disciplinas de Algoritmos e Estrutura de dados, Eletrotécnica e Cálculo no curso de Engenharia de Computação pela instituição.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card de Fibra Mais Telecom -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Estagiário de Suporte Técnico</h5>
+                        Fibramais Telecom | Bambuí, MG | 12/2018 - 02/2019
+                    </div>
+                    <div class="card-body">
+                        <!-- Tecnologias utilizadas -->
+                        <p>
+                            <i class="fas fa-server"></i>
+                            <i class="fas fa-exchange-alt"></i>
+                            <i class="fas fa-globe"></i>
+                            <i class="fas fa-wifi"></i>
+                            <i class="fas fa-network-wired"></i>
+                        </p>
+                        <!-- Detalhes da experiência -->
+                        <ul>
+                            <li>Manutenção e instalação de Redes Cabeadas e Wireless, lidando com sistemas óticos, crimpagem de cabos, configuração de antenas de rádio, roteadores e modems. Teste e conserto de equipamentos com defeito, realizando a troca de Microcomponentes quando necessário.</li>
+                            <li>Configuração de centrais de distribuição local, alocando os canais de telecomunicação de forma balanceada no Switch de Rede.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educação -->
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">
+                <h2><i class="fas fa-graduation-cap"></i>  Educação</h2>
+            </div>
+            <div class="card-body">
+                <!-- Card de Bacharelado em Engenharia -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Bacharelado em Engenharia</h5>
+                        IFMG - Campus Bambuí | Bambuí, MG | 02/2020 - Atualmente
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Engenharia de Computação.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card de Técnico Integrado ao Ensino Médio -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Técnico Integrado ao Ensino Médio</h5>
+                        IFMG - Campus Bambuí | Bambuí, MG | 02/2017 - 12/2019
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Técnico em Informática.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projetos -->
+        <div class="card mb-4">
+            <div class="card-header bg-dark text-white">
+                <h2><i class="fas fa-project-diagram"></i>  Principais Projetos</h2>
+            </div>
+            <div class="card-body">
+                <!-- Card de IoT Relay Irrigation Control -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">IoT Relay Irrigation Control</h5>
+                        Aplicação para controle de um sistema de irrigação por ativação programada de horários (ReactJS, PostgreSQL, MQTT, C++ e JMeter). 10/2023
+                    </div>
+                    <div class="card-body">
+                        <!-- Detalhes do projeto -->
+                        <p>
+                            <i class="fab fa-react"></i> 
+                            <i class="fab fa-git"></i> 
+                            <i class="fab fa-cuttlefish"></i> 
+                            <i class="fab fa-linux"></i> 
+                            <i class="fas fa-database"></i> 
+                            <i class="fas fa-server"></i> 
+                            <i class="fas fa-code"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- Card de Predicting coffee price with Neural Networks -->
+                <div class="card mb-3">
+                    <div class="card-header bg-light">
+                        <h5 class="mb-0">Predicting coffee price with Neural Networks</h5>
+                        Implementação e pesquisa de uma rede LSTM para prever a série temporal do preço do café arábica, extraída dos dados do CEPEA Esalq/USP (Python, Pandas, Scikit-learn, TensorFlow, Keras, Matplotlib, Jupyter Notebook, CUDA, cuDNN). 06/2023
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <i class="fab fa-python"></i> 
+                            <i class="fab fa-pagelines"></i> 
+                            <i class="fas fa-memory"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Carta de Apresentação (modal) -->
+    <div class="modal" tabindex="-1" role="dialog" id="cartaModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carta de Apresentação</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Prezado recrutador,</p>
+                    <p>Me chamo Deivison, e nesta carta expresso meu interesse na posição de estagiar ou trabalhar com vocês.</p>
+                    <p>Tenho uma sólida experiência como programador e estou confiante de que minhas habilidades em desenvolvimento de aplicações fazem de mim um candidato ideal para esta posição.</p>
+                    <p>Estou muito entusiasmado com a oportunidade de contribuir para a equipe e acredito que minha experiência acadêmica e profissional me preparou bem para os desafios desta função.</p>
+                    <p>Estou ansioso para discutir como minhas habilidades e experiências podem beneficiar a empresa. Obrigado pela consideração.</p>
+                    <p>Atenciosamente,<br>Deivison Oliveira Costa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function mostrarCarta() {
+            // Lógica para exibir a carta
+            $('#cartaModal').modal('show');
+        }
+    </script>
+
+</body>
+</html>
